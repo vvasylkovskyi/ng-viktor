@@ -9,7 +9,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      { path: '', loadChildren: './layout/layout.module#LayoutModule' },
+      // { path: '', loadChildren: './layout/layout.module#LayoutModule' },
     ],
       {
         // preloadingStrategy:PreloadAllModules,
