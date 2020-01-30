@@ -10,8 +10,8 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot([
-      { path: '', component: AppComponent }
-      // { path: '', loadChildren: './layout/layout.module#LayoutModule' },
+      // { path: '', component: AppComponent },
+      { path: '', loadChildren: './home/home.module#HomeModule' },
     ],
       {
         // preloadingStrategy:PreloadAllModules,
