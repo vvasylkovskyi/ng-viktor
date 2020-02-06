@@ -63,8 +63,6 @@ $font-size: 25px;
   }
 
   &:nth-child(2n + 1) {
-    background-color: $basic-light-color;
-
     h2 {
       color: $basic-dark-color;
     }
@@ -145,7 +143,8 @@ $font-size: 25px;
 .effect.aeneas {
   a {
     transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s,
-      border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s,
+      border-top-right-radius 0.1s linear 0.1s,
+      border-bottom-right-radius 0.1s linear 0.2s,
       border-bottom-left-radius 0.1s linear 0.3s;
 
     i {
@@ -166,8 +165,10 @@ $font-size: 25px;
 /* jaques effect */
 .effect.jaques {
   a {
-    transition: border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s,
-      border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+    transition: border-top-left-radius 0.1s linear 0s,
+      border-top-right-radius 0.1s linear 0.1s,
+      border-bottom-right-radius 0.1s linear 0.2s,
+      border-bottom-left-radius 0.1s linear 0.3s;
 
     &:hover {
       border-radius: 50%;
