@@ -3,7 +3,9 @@
   width: 240px;
   border-radius: 200px;
 }
-
+li {
+  list-style-type: none;
+}
 .profile-card {
   background-color: #fff;
   border-radius: 20px;
@@ -27,6 +29,23 @@
   font-size: 22px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   // font-style: italic;
+}
+.hr-class {
+  border-top: 3px solid white;
+}
+.title {
+  font-size: 32px;
+}
+.contact {
+  color: white;
+  font-size: 32px;
+}
+.footer {
+  background-color: #212121;
+}
+
+.all-rights-reserved {
+  color: white;
 }
 
 $circle-size: 15px;
