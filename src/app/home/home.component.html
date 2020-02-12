@@ -9,8 +9,11 @@
         <div class="col-5">
           <p class="personal-description m-0">Hi, my name is</p>
           <p class="greeting m-0">Viktor Vasylkovskyi</p>
-          <p class="personal-description">I am a Software Engineer based in Lisbon, specialized in web development and
-            building (and sometimes design) of a high quality websites and applications.</p>
+          <p class="personal-description">
+            I am a Software Engineer based in Lisbon, specialized in web
+            development and building (and sometimes design) of a high quality
+            websites and applications.
+          </p>
         </div>
         <div class="col-1 flex-h-end flex-v-center">
           <ul class="loading-frame">
@@ -36,15 +39,15 @@
     </div>
     <div class="row flex-center" style="margin-bottom: 30vh">
       <div class="col-5">
-        <hr style="border-top: 3px solid black;">
+        <hr style="border-top: 3px solid black;" />
       </div>
     </div>
     <div class="row">
       <div class="col-4 text-center">
         <label class="personal-description">
-          I'm passionate about UI design,
-          animations and cool effects. I can develop a web page which has intuitive user interface and provide a great
-          user experience.
+          I'm passionate about UI design, animations and cool effects. I can
+          develop a web page which has intuitive user interface and provide a
+          great user experience.
         </label>
       </div>
     </div>
@@ -55,17 +58,23 @@
     </div>
     <div class="row flex-center">
       <div class="col-4">
-        <hr style="border-top: 3px solid black;">
+        <hr style="border-top: 3px solid black;" />
       </div>
     </div>
     <div class="row flex-center mt-5" style="margin-bottom: 30vh">
-      <div class="col-6">
+      <div class="col-6 pl-0 journey-box pt-4 pb-4">
         <div class="row">
           <div class="col-3">
-            <ul>
-              <li (click)="selectedJourney = skyJourney">Sky</li>
-              <li (click)="selectedJourney = indraJourney">Indra</li>
-            </ul>
+            <div style="text-align: center;">
+              <li class="journey-separator" [class.selected-border]="selectedJourney === skyJourney"
+                (click)="selectedJourney = skyJourney">
+                Sky
+              </li>
+              <li class="journey-separator" [class.selected-border]="selectedJourney === indraJourney"
+                (click)="selectedJourney = indraJourney">
+                Indra
+              </li>
+            </div>
           </div>
           <div class="col-9">
             <div class="row">
@@ -98,7 +107,6 @@
                 </div>
               </div>
             </ng-container>
-
           </div>
         </div>
       </div>
@@ -106,9 +114,9 @@
     <div class="row">
       <div class="col-12">
         <label class="personal-description">
-          I'm passionate about UI design,
-          animations and cool effects. I can develop a web page which has intuitive user interface and provide a great
-          user experience.
+          I'm passionate about UI design, animations and cool effects. I can
+          develop a web page which has intuitive user interface and provide a
+          great user experience.
         </label>
       </div>
     </div>
@@ -132,21 +140,54 @@
         </div>
       </div>
     </div>
+    <div class="row" style="margin-top: 30vh;">
+      <div class="col-12 flex-center">
+        <label class="title">My Work</label>
+      </div>
+    </div>
+    <div class="row flex-center">
+      <div class="col-5">
+        <hr style="border-top: 3px solid black;" />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 flex-center">
+        <div class="row flex-center w-100 mt-5">
+          <div class="col-4 p-0 mr-5 card-class">
+            <work-card [imgUrl]="'assets/images/JUL.png'" [title]="'JUL'" [description]="'Bla bla bla'"></work-card>
+          </div>
+          <div class="col-4 p-0 ml-5 card-class">
+            <work-card [imgUrl]="'assets/images/peacock.png'" [title]="'Peacock'" [description]="'Bla bla bla'">
+            </work-card>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4" style="margin-bottom: 30vh">
+      <div class="col-12 flex-center">
+        <div class="row flex-center w-100">
+
+        </div>
+      </div>
+    </div>
 
     <div class="footer">
       <div class="row pt-5">
         <div class="col-12" style="text-align: center">
-          <label class="contact"> Feel free to contact me on any of the social platforms below </label>
+          <label class="contact">
+            Feel free to contact me on any of the social platforms below
+          </label>
         </div>
       </div>
       <div class="row flex-center">
         <div class="col-5">
-          <hr class="hr-class">
+          <hr class="hr-class" />
         </div>
       </div>
       <div class="row pt-5">
         <div class="col-12" style="text-align: center">
-          <label class="all-rights-reserved">© 2020 Viktor Vasylkovskyi. All rights reserved. Sky Developer</label>
+          <label class="all-rights-reserved">© 2020 Viktor Vasylkovskyi. All rights reserved. Sky
+            Developer</label>
         </div>
       </div>
       <div class="effect aeneas">
