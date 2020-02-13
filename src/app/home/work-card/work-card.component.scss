@@ -1,6 +1,16 @@
+@import "../../../assets/scss/variables.scss";
+
 .card-content {
   padding: 0px 15px;
   height: 35vh;
+  color: $black;
+
+  .card-description {
+    color: black;
+  }
+  .card-title {
+    color: black;
+  }
 }
 
 .img-class {

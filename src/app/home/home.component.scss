@@ -1,3 +1,5 @@
+@import "../../assets/scss/variables.scss";
+
 .profile-pic {
   height: 240px;
   width: 240px;
@@ -17,6 +19,55 @@ li {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
+.middle-container {
+  height: 60vh;
+  background-color: $black;
+
+  .personal-description {
+    color: white;
+  }
+  .title {
+    color: white;
+  }
+  .horizontal-line {
+    border-top: 3px solid white;
+  }
+}
+
+.my-journey-container {
+  .title {
+    color: black;
+  }
+
+  .horizontal-line {
+    border-top: 3px solid black;
+  }
+
+  .journey-title {
+    color: black;
+  }
+
+  .journey-company {
+    color: black;
+  }
+
+  .journey-period {
+    color: black;
+  }
+
+  .journey-project-name {
+    color: black;
+  }
+
+  .journey-project-content {
+    color: black;
+  }
+
+  .journey-project-scope {
+    color: black;
+  }
+}
+
 .greeting {
   font-size: 50px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
@@ -25,15 +76,31 @@ li {
   color: #495057;
 }
 
+.wave-container {
+  // background: #eee;
+  &.wave {
+    margin-bottom: -1vh;
+  }
+  &.wave-inverse {
+    margin-top: -1vh;
+  }
+}
+
+.wave-container > svg {
+  display: block;
+}
+
 .card-class {
   box-shadow: 0px -5px 20px rgba(72, 56, 56, 0.4);
   border-radius: 15px;
   background-color: white;
   margin: 0;
 }
+
 .journey-box {
   border-left: 2px solid black;
 }
+
 .journey-separator {
   display: flex;
   justify-content: center;
@@ -49,6 +116,8 @@ li {
 .personal-description {
   font-size: 22px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: $black;
+
   // font-style: italic;
 }
 .hr-class {
@@ -56,17 +125,19 @@ li {
 }
 .title {
   font-size: 32px;
-}
-.contact {
-  color: white;
-  font-size: 32px;
-}
-.footer {
-  background-color: #212121;
+  color: $black;
 }
 
-.all-rights-reserved {
-  color: white;
+.footer {
+  background-color: #212121;
+
+  .contact {
+    color: white;
+    font-size: 32px;
+  }
+  .all-rights-reserved {
+    color: white;
+  }
 }
 
 $circle-size: 15px;

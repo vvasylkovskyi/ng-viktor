@@ -32,94 +32,100 @@
       </div>
       <div class="container"></div>
     </div>
-    <div class="row" style="margin-top: 30vh;">
-      <div class="col-12 flex-center">
-        <label class="title">What Do I Do</label>
-      </div>
+    <div class="wave-container wave">
+      <img src="assets/svg/wave.svg" />
     </div>
-    <div class="row flex-center" style="margin-bottom: 30vh">
-      <div class="col-5">
-        <hr style="border-top: 3px solid black;" />
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-4 text-center">
-        <label class="personal-description">
-          I'm passionate about UI design, animations and cool effects. I can
-          develop a web page which has intuitive user interface and provide a
-          great user experience.
-        </label>
-      </div>
-    </div>
-    <div class="row" style="margin-top: 30vh;">
-      <div class="col-12 flex-center">
-        <label class="title">My Journey</label>
-      </div>
-    </div>
-    <div class="row flex-center">
-      <div class="col-4">
-        <hr style="border-top: 3px solid black;" />
-      </div>
-    </div>
-    <div class="row flex-center mt-5" style="margin-bottom: 30vh">
-      <div class="col-6 pl-0 journey-box pt-4 pb-4">
-        <div class="row">
-          <div class="col-3">
-            <div style="text-align: center;">
-              <li class="journey-separator" [class.selected-border]="selectedJourney === skyJourney"
-                (click)="selectedJourney = skyJourney">
-                Sky
-              </li>
-              <li class="journey-separator" [class.selected-border]="selectedJourney === indraJourney"
-                (click)="selectedJourney = indraJourney">
-                Indra
-              </li>
-            </div>
+    <div class="middle-container flex-center">
+      <div>
+        <div class="row" style="margin-top: 30vh;">
+          <div class="col-12 flex-center">
+            <label class="title">What Do I Do</label>
           </div>
-          <div class="col-9">
-            <div class="row">
-              <div class="col-8">
-                <label>{{ selectedJourney.title }}</label>
-              </div>
-              <div class="col-4">
-                <label>{{ selectedJourney.company }}</label>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12">
-                <label>{{ selectedJourney.period }}</label>
-              </div>
-            </div>
-            <ng-container *ngFor="let project of selectedJourney.projects; let i = index">
-              <div class="row">
-                <div class="col-12">
-                  <label>{{ project.name }}</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <label>{{ project.content }}</label>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12">
-                  <label>{{ project.scope }}</label>
-                </div>
-              </div>
-            </ng-container>
+        </div>
+        <div class="row flex-center">
+          <div class="col-5">
+            <hr class="horizontal-line" />
+          </div>
+        </div>
+        <div class="row flex-center" style="margin-bottom: 30vh">
+          <div class="col-4 text-center">
+            <label class="personal-description">
+              I'm passionate about UI design, animations and cool effects. I can
+              develop a web page which has intuitive user interface and provide
+              a great user experience.
+            </label>
           </div>
         </div>
       </div>
     </div>
-    <div class="row">
-      <div class="col-12">
-        <label class="personal-description">
-          I'm passionate about UI design, animations and cool effects. I can
-          develop a web page which has intuitive user interface and provide a
-          great user experience.
-        </label>
+    <div class="wave-container wave-inverse">
+      <img src="assets/svg/inverse-wave.svg" />
+    </div>
+    <div class="my-journey-container flex-center">
+      <div>
+        <div class="row" style="margin-top: 30vh;">
+          <div class="col-12 flex-center">
+            <label class="title">My Journey</label>
+          </div>
+        </div>
+        <div class="row flex-center">
+          <div class="col-4">
+            <hr class="horizontal-line" />
+          </div>
+        </div>
+        <div class="row flex-center mt-5" style="margin-bottom: 30vh">
+          <div class="col-6 pl-0 journey-box pt-4 pb-4">
+            <div class="row">
+              <div class="col-3">
+                <div style="text-align: center;">
+                  <li class="journey-separator" [class.selected-border]="selectedJourney === skyJourney"
+                    (click)="selectedJourney = skyJourney">
+                    Sky
+                  </li>
+                  <li class="journey-separator" [class.selected-border]="selectedJourney === indraJourney"
+                    (click)="selectedJourney = indraJourney">
+                    Indra
+                  </li>
+                </div>
+              </div>
+              <div class="col-9">
+                <div class="row">
+                  <div class="col-8">
+                    <label class="journey-title">{{ selectedJourney.title }}</label>
+                  </div>
+                  <div class="col-4">
+                    <label class="journey-company">{{ selectedJourney.company }}</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <label class="journey-period">{{ selectedJourney.period }}</label>
+                  </div>
+                </div>
+                <ng-container *ngFor="let project of selectedJourney.projects; let i = index">
+                  <div class="row">
+                    <div class="col-12">
+                      <label class="journey-project-name">{{ project.name }}</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <label class="journey-project-content">{{ project.content }}</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-12">
+                      <label class="journey-project-scope">{{ project.scope }}</label>
+                    </div>
+                  </div>
+                </ng-container>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
 
     <div class="row flex-center">
       <div class="flex-center profile-card p-4">
@@ -165,9 +171,7 @@
     </div>
     <div class="row mt-4" style="margin-bottom: 30vh">
       <div class="col-12 flex-center">
-        <div class="row flex-center w-100">
-
-        </div>
+        <div class="row flex-center w-100"></div>
       </div>
     </div>
 

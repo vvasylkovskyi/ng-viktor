@@ -1,3 +1,5 @@
+@import "../../../assets/scss/variables.scss";
+
 .header {
   position: fixed;
   width: 100%;
@@ -20,9 +22,9 @@
 }
 
 .header {
-    border-bottom: 1px solid #17a2b8;
-    background-color: cornflowerblue;
-    box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid #17a2b8;
+  background-color: $black;
+  box-shadow: 0 2px 30px 0 rgba(0, 0, 0, 0.25);
 }
 .top-nav {
   list-style: none;
@@ -37,16 +39,13 @@
 }
 
 .circle {
-    border-radius: 100px;
-    background-color: aquamarine;
-    width: 30px;
-    height: 30px;
+  border-radius: 100px;
+  background-color: aquamarine;
+  width: 30px;
+  height: 30px;
 }
 
 .li-class {
-    color: azure;
-    cursor: pointer;
+  color: azure;
+  cursor: pointer;
 }
-
-
-
