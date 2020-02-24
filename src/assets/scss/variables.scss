@@ -1,4 +1,31 @@
 $wave-color: #0099ff;
 $cornflowerblue-color: cornflowerblue;
-$black: #000000;
+$black: #0e0e0e;
 $white: #ffffff;
+$dark-grey: #262c3a;
+$white-font-color: #fcf7f8;
+$black-title-color: #272838;
+$grey-font-color: #616161;
+$light-blue-color: #99aee8;
+$orange: #ffa800;
+
+$green: #6cd4c9;
+
+$hexagon-gradient: linear-gradient(
+    122.61deg,
+    #9caee1 -5.1%,
+    rgba(92, 122, 215, 0.98) 109.9%
+  ),
+  #99aee8;
+$light-blue-image: linear-gradient(
+    92.17deg,
+    rgba(53, 67, 198, 0) 7.89%,
+    #99aee8 97.55%
+  ),
+  #99aee8;
+
+// Sizes
+
+$header-classic__height: 10vh;
+$header-black__height: 6vh;
+$px: "(0.8px + 0.05335vmin)";

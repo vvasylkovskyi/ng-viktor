@@ -19,52 +19,183 @@ li {
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 }
 
-.middle-container {
-  height: 60vh;
-  background-color: $black;
+.introduction-section {
+  height: calc(100vh - #{$header-black__height} - #{$header-classic__height});
+  padding-left: 50px;
+  padding-right: 50px;
+  .introduction {
+    .hi__label {
+      font-size: 28px;
+      line-height: 38px;
+      color: $grey-font-color;
+      margin: 0;
+    }
 
-  .personal-description {
-    color: white;
+    .my-name__label {
+      font-size: 48px;
+      line-height: 65px;
+      color: $black-title-color;
+      box-sizing: border-box;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      margin: 0;
+    }
+
+    .short-description__label {
+      font-size: 24px;
+      line-height: 33px;
+      color: $grey-font-color;
+      margin: 0;
+    }
+
+    .call-to-action__button {
+      height: 62px;
+      background: $light-blue-color;
+      box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
+      border-radius: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .button-text__paragraph {
+        font-size: 28px;
+        line-height: 38px;
+        color: $white-font-color;
+      }
+    }
+
+    #grid {
+      position: relative;
+      width: 60%;
+      margin: 0 auto;
+      padding: 0; /* Clears unordered list default of 40px */
+      transform: rotate(-90deg);
+
+      > li {
+        list-style-type: none;
+        position: relative;
+        float: left;
+        width: 27.85714285714286%;
+        padding: 0 0 32.16760145166612% 0;
+        -o-transform: rotate(-60deg) skewY(30deg);
+        -moz-transform: rotate(-60deg) skewY(30deg);
+        -webkit-transform: rotate(-60deg) skewY(30deg);
+        -ms-transform: rotate(-60deg) skewY(30deg);
+        transform: rotate(-60deg) skewY(30deg);
+        overflow: hidden;
+        visibility: hidden;
+
+        .hexagon {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: $green;
+          border: 2px solid $green;
+          -o-transform: skewY(-30deg) rotate(60deg);
+          -moz-transform: skewY(-30deg) rotate(60deg);
+          -webkit-transform: skewY(-30deg) rotate(60deg);
+          -ms-transform: skewY(-30deg) rotate(60deg);
+          transform: skewY(-30deg) rotate(60deg);
+          // clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+          overflow: hidden;
+        }
+
+        .inner {
+          background: white;
+          width: 100%;
+          height: 100%;
+          transform: rotate(-60deg) skewY(30deg) scale(0.99);
+        }
+
+        &:nth-child(3n + 2) {
+          margin: 0 2%;
+        }
+
+        &:nth-child(6n + 4) {
+          margin-left: 0.5%;
+        }
+      }
+    }
+
+    #grid li * {
+      visibility: visible;
+    }
+
+    #grid li:nth-child(6n + 4),
+    #grid li:nth-child(6n + 5),
+    #grid li:nth-child(6n + 6) {
+      margin-top: -5.9285714285%;
+      margin-bottom: -5.9285714285%;
+      -o-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+      -moz-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+      -webkit-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+      -ms-transform: translateX(50%) rotate(-60deg) skewY(30deg);
+      transform: translateX(50%) rotate(-60deg) skewY(30deg);
+    }
+
+    .clear:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
   }
-  .title {
-    color: white;
+
+  .middle-container {
+    height: 60vh;
+    background-color: $black;
+
+    .personal-description {
+      color: white;
+    }
+    .title {
+      color: white;
+    }
+    .horizontal-line {
+      border-top: 3px solid white;
+    }
   }
+
+  .my-journey-container {
+    .title {
+      color: $black;
+    }
+
+    .horizontal-line {
+      border-top: 3px solid $black;
+    }
+
+    .journey-title {
+      color: $black;
+    }
+
+    .journey-company {
+      color: $black;
+    }
+
+    .journey-period {
+      color: $black;
+    }
+
+    .journey-project-name {
+      color: $black;
+    }
+
+    .journey-project-content {
+      color: $black;
+    }
+
+    .journey-project-scope {
+      color: $black;
+    }
+  }
+
   .horizontal-line {
-    border-top: 3px solid white;
-  }
-}
-
-.my-journey-container {
-  .title {
-    color: black;
-  }
-
-  .horizontal-line {
-    border-top: 3px solid black;
-  }
-
-  .journey-title {
-    color: black;
-  }
-
-  .journey-company {
-    color: black;
-  }
-
-  .journey-period {
-    color: black;
-  }
-
-  .journey-project-name {
-    color: black;
-  }
-
-  .journey-project-content {
-    color: black;
-  }
-
-  .journey-project-scope {
-    color: black;
+    border-top: 20px solid black;
+    background-color: black;
+    height: 0px;
+    width: 80px;
+    margin: 40px;
   }
 }
 
@@ -98,7 +229,7 @@ li {
 }
 
 .journey-box {
-  border-left: 2px solid black;
+  border-left: 2px solid $black;
 }
 
 .journey-separator {
@@ -153,6 +284,17 @@ body {
 .loading-frame {
   transform: rotate(90deg);
 }
+
+.hexagon:hover > * {
+  border-top-color: orange;
+  border-bottom-color: orange;
+}
+// .hexagon:hover {
+//   -webkit-transform: scale(0.8);
+//   -moz-transform: scale(0.8);
+//   -ms-transform: scale(0.8);
+//   transform: scale(0.8);
+// }
 
 .circle {
   position: absolute;
