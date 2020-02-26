@@ -20,36 +20,37 @@ li {
 }
 
 .introduction-section {
-  height: calc(100vh - #{$header-black__height} - #{$header-classic__height});
+  height: calc(
+    100vh - #{$header-bottom__top_position} - #{$header-bottom__height}
+  );
   padding-left: 50px;
   padding-right: 50px;
   .introduction {
     .hi__label {
       font-size: 28px;
-      line-height: 38px;
       color: $grey-font-color;
       margin: 0;
     }
 
     .my-name__label {
-      font-size: 48px;
-      line-height: 65px;
-      color: $black-title-color;
+      font-size: 50px;
+      color: $grey-title-color;
+      letter-spacing: 10%;
       box-sizing: border-box;
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       margin: 0;
     }
 
     .short-description__label {
       font-size: 24px;
-      line-height: 33px;
+      line-height: auto;
       color: $grey-font-color;
+      text-align: left;
       margin: 0;
     }
 
     .call-to-action__button {
       height: 62px;
-      background: $light-blue-color;
+      background: $green;
       box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.25);
       border-radius: 45px;
       display: flex;
@@ -141,20 +142,20 @@ li {
     }
   }
 
-  .middle-container {
-    height: 60vh;
-    background-color: $black;
+  // .middle-container {
+  //   height: 60vh;
+  //   background-{color: $black;
 
-    .personal-description {
-      color: white;
-    }
-    .title {
-      color: white;
-    }
-    .horizontal-line {
-      border-top: 3px solid white;
-    }
-  }
+  //   .personal-description {
+  //     color: white;
+  //   }
+  //   .title {
+  //     color: white;
+  //   }
+  //   .horizontal-line {
+  //     border-top: 3px solid white;
+  //   }
+  // }
 
   .my-journey-container {
     .title {
@@ -352,6 +353,26 @@ body {
 .circle:nth-child(10) {
   animation-delay: 0.1s;
   transform: translate(-80px, 25px);
+}
+
+.what-do-i-do-container {
+  background-color: $grey-bg;
+  .what-do-i-do__label {
+    color: $grey-title-color;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+  }
+
+  .horizontal-line {
+    border-top: 1px solid $grey-color;
+  }
+
+  .what-do-i-do-description__label {
+    color: $grey-font-color;
+    font-size: 20px;
+    line-height: 160%;
+  }
 }
 
 @keyframes animate {

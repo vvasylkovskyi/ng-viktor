@@ -43,27 +43,39 @@
   cursor: pointer;
 }
 
-.header--classic {
-  background: $light-blue-image;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+.header--body {
+  background: $green;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   top: 0;
   left: 0;
+  right: 0;
+  z-index: 9;
   position: fixed;
-  height: $header-classic__height;
+  height: $header-body__height;
+
+  .logo__img {
+    position: fixed;
+    height: 12vh;
+    top: 1vh;
+    margin-left: 11%;
+    left: 0;
+  }
 
   .header-text {
-    font-size: 20px;
-    line-height: 27px;
+    font-size: calc(16 * #{$px});
+    line-height: calc(27 * #{$px});
     color: $white-font-color;
   }
 }
 
-.header--black {
-  background: $dark-grey;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  height: $header-black__height;
+.header--bottom {
+  background: $grey-color;
+  // box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  height: $header-bottom__height;
   left: 0;
-  top: 0;
+  right: 0;
+  z-index: 9;
+  top: $header-bottom__top_position;
   position: fixed;
 
   .logo-circle {

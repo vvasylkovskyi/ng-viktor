@@ -6,10 +6,14 @@ $dark-grey: #262c3a;
 $white-font-color: #fcf7f8;
 $black-title-color: #272838;
 $grey-font-color: #616161;
+$grey-title-color: #595d67;
+$grey-color: #a5aab6;
 $light-blue-color: #99aee8;
 $orange: #ffa800;
 
 $green: #6cd4c9;
+
+$grey-bg: #f5f7f9;
 
 $hexagon-gradient: linear-gradient(
     122.61deg,
@@ -26,6 +30,7 @@ $light-blue-image: linear-gradient(
 
 // Sizes
 
-$header-classic__height: 10vh;
-$header-black__height: 6vh;
+$header-body__height: 8vh;
+$header-bottom__height: 1vh;
+$header-bottom__top_position: 9vh;
 $px: "(0.8px + 0.05335vmin)";
